@@ -1,0 +1,80 @@
+# Gradle files
+.kotlin/
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+output.json
+
+# Local configuration file
+local.properties
+
+# IntelliJ IDEA
+*.iml
+.idea/
+
+# Android Studio
+.navigation/
+*.hprof
+
+# Keystore files
+*.jks
+*.keystore
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Xcode
+xcuserdata/
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
+**/xcshareddata/WorkspaceSettings.xcsettings
+*.build/
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Swift Package Manager
+.swiftpm
+.build/
+
+# KMM
+iosApp/Pods/
+iosApp/Podfile.lock
+composeApp/build/
+shared/build/
+androidApp/build/
+shared/shared.podspec
+kotlin-js-store/
+
+# Temporary files
+*.log
+*.swp
+*.tmp 
+iosApp/iosApp.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+local.properties
+.idea/misc.xml

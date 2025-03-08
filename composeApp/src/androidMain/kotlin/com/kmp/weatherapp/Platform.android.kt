@@ -1,4 +1,4 @@
-package com.kmp.minigame
+package com.kmp.weatherapp
 
 import android.os.Build
 

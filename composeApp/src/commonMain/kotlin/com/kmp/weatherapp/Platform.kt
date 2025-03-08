@@ -1,4 +1,4 @@
-package com.kmp.minigame
+package com.kmp.weatherapp
 
 interface Platform {
     val name: String

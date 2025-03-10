@@ -50,6 +50,41 @@ private val apiKey = "YOUR_API_KEY" // Replace with your actual API key
 
 1. Run `./gradlew composeApp:run` to start the desktop version
 
+### Using android_runner.sh
+
+For efficient testing and debugging on Android devices, the project includes an `android_runner.sh` shell script that:
+
+1. **Dynamically extracts app information** from your project files:
+   - Package name from `build.gradle.kts`
+   - Main activity name from `AndroidManifest.xml`
+
+2. **Builds the APK** automatically using Gradle
+
+3. **Handles device connection**:
+   - Uses connected device if available
+   - Launches an emulator if no device is connected
+   - Waits for the emulator to boot completely
+
+4. **Installs and launches** the app on the device
+
+To use the script:
+```bash
+# Make it executable (first time only)
+chmod +x android_runner.sh
+
+# Run it
+./android_runner.sh
+```
+
+The script outputs detailed information about each step, making it easy to verify the app configuration:
+```
+Extracting package name from composeApp/build.gradle.kts...
+Using package: com.kmp.weatherapp
+Extracting launcher activity from composeApp/src/androidMain/AndroidManifest.xml...
+Using activity: com.kmp.weatherapp.MainActivity
+...
+```
+
 ## Architecture
 
 The app follows an MVVM architecture:

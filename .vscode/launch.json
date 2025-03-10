@@ -11,8 +11,14 @@
             "type": "node-terminal"
         },
         {
+            "command": "./android_runner.sh",
+            "name": "Run Android App",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
             "command": "./gradlew :composeApp:compileDebugKotlinAndroid",
-            "name": "Compile Android Debug",
+            "name": "Compile Android App",
             "request": "launch",
             "type": "node-terminal"
         },

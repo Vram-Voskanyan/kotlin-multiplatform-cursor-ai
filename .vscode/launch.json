@@ -17,12 +17,6 @@
             "type": "node-terminal"
         },
         {
-            "command": "./gradlew :composeApp:compileDebugKotlinAndroid",
-            "name": "Compile Android App",
-            "request": "launch",
-            "type": "node-terminal"
-        },
-        {
             "command": "./gradlew :composeApp:compileIosMainKotlinMetadata",
             "name": "Compile iOS Shared Kotlin Metadata",
             "request": "launch",
